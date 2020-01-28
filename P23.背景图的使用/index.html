@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>P23.背景图的使用</title>
+	</head>
+	<style>
+		html,body {
+			/* 让滚动条消失 */
+			margin: 0;
+			height: 100%;
+		}
+		div {
+			height: 100%;
+			background-image: url(picture/微信图片_20200128121540.jpg);
+			/* 背景图默认平铺无限重复的方式显示 */
+			background-repeat: no-repeat;
+			/* 背景图片定位 */
+			background-position: center center;
+		}
+	</style>
+	<body>
+		<div id="">
+			
+		</div>
+	</body>
+</html>
+<!-- 
+		div可以设置背景图片,一般情况下背景图片大于div,div默认独占一行,所以只需要给div设置高度就可以尽可能显示更多的背景图片,
+	但是记住:元素设置100%高度或者100%其它的意思不是相对浏览器的,而是相对父元素的,也就是说:元素宽高的百分比,是相对于父元素而言的,
+	若父元素高度为0,则子元素高度即使设置100%,大小也是0,html元素大小是相对于浏览器窗口而言的.
+ -->
